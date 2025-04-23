@@ -1,0 +1,37 @@
+//Colors
+$primary: #003366;
+$secondary: #4e5d6c;
+$success: #1f8e3c;
+$info: #1a6782;
+$warning: #e58e00;
+$danger: #d32f2f;
+$light: #f4f6f8;
+$dark: #1c1f24;
+$accent: #006f8e;
+// $text-color: #e1e4e8;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "accent": $accent // Optional custom one,,,,,,,,,,,,,,,,
+);
+
+//Spacers
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 8,
+  8: $spacer * 12,
+) !default;

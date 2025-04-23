@@ -1,0 +1,24 @@
+#home {
+  font-family: raleway;
+
+  height: 100vh;
+  background-image: url(/images/203530.jpg);
+  background-size: cover;
+  background-position: center;
+
+  .welcome {
+    position: relative;
+    top: 22.5%;
+
+    h1 {
+      font-size: 4.5rem;
+    }
+
+    .btn-browse {
+      box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+      font-family: mooli;
+      padding: 12px 24px;
+      letter-spacing: 1px;
+    }
+  }
+}

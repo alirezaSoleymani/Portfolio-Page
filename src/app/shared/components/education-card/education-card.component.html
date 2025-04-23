@@ -1,0 +1,12 @@
+<div class="education-card card border-0 px-5 py-4">
+  <img [src]="image" [alt]="title" class="mx-auto" />
+
+  <h3 class="card-title fs-5">{{ title }}</h3>
+
+  <div class="period mt-2 mb-3">
+    <span [innerHTML]="startDate | date : 'dd/MM/yyyy' | badge"></span> -
+    <span [innerHTML]="endDate | date : 'dd/MM/yyyy' | badge"></span>
+  </div>
+
+  <p class="card-text">{{ description }}</p>
+</div>
