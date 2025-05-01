@@ -10,6 +10,7 @@ import { IEducation } from './shared/models/education.model';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [
     RouterOutlet,
     NavbarComponent,

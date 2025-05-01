@@ -5,7 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
   standalone: true,
 })
 export class BadgePipe implements PipeTransform {
-  transform(value: Date | string) {
-    return `<span class="badge text-bg-secondary">${value}</span>`;
+  transform(value: Date | string, context?: string) {
+    const className = context || 'primary';
+    return `<span class="badge text-bg-${className}">${value}</span>`;
   }
 }

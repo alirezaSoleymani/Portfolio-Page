@@ -5,7 +5,9 @@
 
   <div class="period mt-2 mb-3">
     <span [innerHTML]="startDate | date : 'dd/MM/yyyy' | badge"></span> -
-    <span [innerHTML]="endDate | date : 'dd/MM/yyyy' | badge"></span>
+    <span
+      [innerHTML]="endDate | date : 'dd/MM/yyyy' | badge : 'secondary'"
+    ></span>
   </div>
 
   <p class="card-text">{{ description }}</p>
