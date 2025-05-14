@@ -4,6 +4,7 @@
       href="index.html"
       class="navbar-brand d-flex justify-content-center align-items-center"
     >
+      @if(menu){
       <img [src]="user.picture_url" class="avatar rounded-circle" />
       <div class="d-flex flex-column justify-content-center text-light ms-3">
         <p class="m-0 fs-5">{{ user.name }}</p>
@@ -11,6 +12,7 @@
           {{ user.position }}
         </p>
       </div>
+      }
     </a>
 
     <button

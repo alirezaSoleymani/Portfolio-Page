@@ -1,0 +1,25 @@
+[
+  {
+    "title": "Elm-o-Farhang Middle School",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus architecto libero reprehenderit quibusdam!",
+    "image": "/images/school-image.svg",
+    "startDate": "2017-09-01T13:25:00.000Z",
+    "endDate": "2019-06-30T13:25:00.000Z",
+    "cv": [{ "id": 1 }, { "id": 2 }],
+    "active": true
+  },
+  {
+    "title": "Shahriari High School",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus architecto libero reprehenderit quibusdam!",
+    "image": "/images/school-image.svg",
+    "startDate": "2020-09-01T13:25:00.000Z",
+    "endDate": "2023-06-30T13:25:00.000Z"
+  },
+  {
+    "title": "University of Isfahan",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus architecto libero reprehenderit quibusdam!",
+    "image": "/images/school-image.svg",
+    "startDate": "2023-09-01T13:25:00.000Z",
+    "endDate": "2025-06-30T13:25:00.000Z"
+  }
+]

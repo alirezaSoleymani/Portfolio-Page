@@ -1,0 +1,7 @@
+[
+  { "title": "Home", "url": "#home" },
+  { "title": "Education", "url": "#education" },
+  { "title": "About Me", "url": "#about" },
+  { "title": "Portfolio", "url": "#portfolio" },
+  { "title": "Contact", "url": "#contact" }
+]
