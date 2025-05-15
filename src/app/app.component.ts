@@ -9,17 +9,16 @@ import { IEducation } from './shared/models/education.model';
 import { UserService } from './shared/services/user.service';
 import { MenuService } from './shared/services/menu.service';
 import { EducationService } from './shared/services/education.service';
-// import { Observable, of } from 'rxjs';
-import { Toast } from 'bootstrap';
+import { NgbToastModule, NgbToast } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet,
     NavbarComponent,
     FooterComponent,
     EducationCardComponent,
+    NgbToastModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -30,6 +29,10 @@ export class AppComponent implements OnInit {
     private menuService: MenuService,
     private educationService: EducationService
   ) {}
+
+  triggerErrorToast() {
+    this.showErrorToast = true;
+  }
 
   ngOnInit(): void {
     this.userService.getUser().subscribe((userData) => {
@@ -56,10 +59,11 @@ export class AppComponent implements OnInit {
         this.errorMessage = err.message;
         console.log('Error: ', err.message);
 
-        const errorToast = Toast.getOrCreateInstance(
-          document.getElementById('errorToast')
-        );
-        errorToast.show();
+        this.triggerErrorToast();
+        // const errorToast = Toast.getOrCreateInstance(
+        //   document.getElementById('errorToast')
+        // );
+        // errorToast.show();
       },
     });
   }
@@ -69,4 +73,5 @@ export class AppComponent implements OnInit {
   education_data: IEducation[];
 
   errorMessage: string = '';
+  showErrorToast: boolean = false;
 }

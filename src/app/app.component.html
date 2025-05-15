@@ -52,16 +52,32 @@
     </div>
 
     <!-- Error Message -->
-    <div id="errorToast" class="toast position-fixed bottom-0 end-0 m-4">
+    <!-- <div id="errorToast" class="toast position-fixed bottom-0 end-0 m-4">
       <div class="toast-header text-bg-danger">
         <strong class="me-auto">Error</strong>
         <small>EducationService</small>
       </div>
 
       <div class="toast-body text-bg-danger">{{ errorMessage }}</div>
-    </div>
+    </div> -->
   </div>
 </section>
 
 <!-- Footer Component -->
 <app-footer></app-footer>
+
+<!-- Error Toast -->
+@if(showErrorToast){
+<ngb-toast
+  [autohide]="true"
+  [delay]="5000"
+  class="position-fixed bottom-0 end-0 me-4 mb-4 bg-danger"
+>
+  <div class="toast-header text-bg-danger">
+    <strong class="me-auto">Error</strong>
+    <small>EducationService</small>
+  </div>
+
+  <div class="toast-body text-bg-danger text-center">{{ errorMessage }}</div>
+</ngb-toast>
+}
